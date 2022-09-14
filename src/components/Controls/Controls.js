@@ -1,14 +1,16 @@
-export default function Controls() {
+export default function Controls({ head, setHead }) {
   return (
     <div className="controls">
       <label>Head</label>
-      <select>
-        <option>Pom Pom</option>
-        <option>Scrunchie</option>
-        <option>Beanie</option>
-        <option>Wrap</option>
+      <select value={head} onChange={(e) => setHead(e.target.value)}>
+        <option default value="pompom-head">
+          Pom Pom
+        </option>
+        <option value="scrunchie-head">Scrunchie</option>
+        <option value="beanie-head">Beanie</option>
+        <option value="wrap-head">Wrap</option>
       </select>
-      <label>Body</label>
+      {/* <label>Body</label>
       <select>
         <option>Dino</option>
         <option>Knit</option>
@@ -21,7 +23,7 @@ export default function Controls() {
         <option>Shorts</option>
         <option>Comfy Jeans</option>
         <option>Skirt</option>
-      </select>
+      </select> */}
     </div>
   );
 }
