@@ -7,12 +7,13 @@ import Character from '../Character/Character';
 
 export default function Main() {
   const [head, setHead] = useState('pompom-head');
+  const [body, setBody] = useState('dino-body');
   return (
     <div>
-      <Controls head={head} setHead={setHead} />
+      <Controls head={head} setHead={setHead} body={body} setBody={setBody} />
       {/* <Catchphrase /> */}
       {/* <Display /> */}
-      <Character head={head} />
+      <Character head={head} body={body} />
     </div>
   );
 }
