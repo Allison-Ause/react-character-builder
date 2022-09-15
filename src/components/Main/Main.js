@@ -12,6 +12,10 @@ export default function Main() {
   const [bodyCount, setBodyCount] = useState(0);
   const [bottoms, setBottoms] = useState('sweatpants-bottoms');
   const [bottomsCount, setBottomsCount] = useState(0);
+  const [catchphrases, setCatchphrases] = useState([
+    'All I need is a good book!',
+    'Hot tea and me.',
+  ]);
   return (
     <div>
       <Controls
@@ -26,7 +30,12 @@ export default function Main() {
         setBottomsCount={setBottomsCount}
       />
       {/* <Catchphrase /> */}
-      <Display headCount={headCount} bodyCount={bodyCount} bottomsCount={bottomsCount} />
+      <Display
+        headCount={headCount}
+        bodyCount={bodyCount}
+        bottomsCount={bottomsCount}
+        catchphrases={catchphrases}
+      />
       <Character head={head} body={body} bottoms={bottoms} />
     </div>
   );
