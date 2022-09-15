@@ -4,6 +4,7 @@ export default function Controls({
   setHeadCount,
   body,
   setBody,
+  setBodyCount,
   bottoms,
   setBottoms,
 }) {
@@ -25,7 +26,13 @@ export default function Controls({
         <option value="wrap-head">Wrap</option>
       </select>
       <label>Body</label>
-      <select value={body} onChange={(e) => setBody(e.target.value)}>
+      <select
+        value={body}
+        onChange={(e) => {
+          setBody(e.target.value);
+          setBodyCount((prevState) => prevState + 1);
+        }}
+      >
         <option default value="dino-body">
           Dino
         </option>

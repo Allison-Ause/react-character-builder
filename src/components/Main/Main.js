@@ -9,6 +9,7 @@ export default function Main() {
   const [head, setHead] = useState('pompom-head');
   const [headCount, setHeadCount] = useState(0);
   const [body, setBody] = useState('dino-body');
+  const [bodyCount, setBodyCount] = useState(0);
   const [bottoms, setBottoms] = useState('sweatpants-bottoms');
   return (
     <div>
@@ -18,11 +19,12 @@ export default function Main() {
         setHeadCount={setHeadCount}
         body={body}
         setBody={setBody}
+        setBodyCount={setBodyCount}
         bottoms={bottoms}
         setBottoms={setBottoms}
       />
       {/* <Catchphrase /> */}
-      <Display headCount={headCount} />
+      <Display headCount={headCount} bodyCount={bodyCount} />
       <Character head={head} body={body} bottoms={bottoms} />
     </div>
   );
