@@ -1,3 +1,5 @@
+import '../Catchphrase/Catchphrase.css';
+
 export default function Catchphrase({
   setCatchphrases,
   currentCatchphrase,
@@ -8,7 +10,7 @@ export default function Catchphrase({
     setCurrentCatchphrase('');
   };
   return (
-    <div className="catchphrases">
+    <div className="catchphrase">
       <label>Cozy Mantra:</label>
       <textarea
         value={currentCatchphrase}

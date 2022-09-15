@@ -1,3 +1,5 @@
+import '../Display/Display.css';
+
 export default function Display({ headCount, bodyCount, bottomsCount, catchphrases }) {
   return (
     <div className="display">

@@ -1,0 +1,12 @@
+.main {
+  display: grid;
+  grid-template-columns: 1.1fr, 1.4fr;
+  grid-template-rows: 1.1fr, 0.7fr, 1.2fr;
+  gap: 5px 10px;
+  grid-template-areas:
+    'Controls Character'
+    'Catchphrase Character'
+    'Display Character';
+  padding: 20px;
+  background-color: rgb(239, 212, 162);
+}

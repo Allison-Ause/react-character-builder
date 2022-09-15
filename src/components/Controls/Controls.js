@@ -1,3 +1,5 @@
+import '../Controls/Controls.css';
+
 export default function Controls({
   head,
   setHead,

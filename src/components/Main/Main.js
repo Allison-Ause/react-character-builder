@@ -1,9 +1,12 @@
 import { useState } from 'react';
 
+import '../Main/Main.css';
+
 import Controls from '../Controls/Controls';
 import Catchphrase from '../Catchphrase/Catchphrase';
 import Display from '../Display/Display';
 import Character from '../Character/Character';
+import background from '../../backgrounds/armchair.jpg';
 
 export default function Main() {
   const [head, setHead] = useState('pompom-head');
@@ -12,13 +15,11 @@ export default function Main() {
   const [bodyCount, setBodyCount] = useState(0);
   const [bottoms, setBottoms] = useState('sweatpants-bottoms');
   const [bottomsCount, setBottomsCount] = useState(0);
-  const [catchphrases, setCatchphrases] = useState([
-    'All I need is a good book!',
-    'Hot tea and me.',
-  ]);
+  const [catchphrases, setCatchphrases] = useState([]);
   const [currentCatchphrase, setCurrentCatchphrase] = useState('');
   return (
-    <div>
+    <div className="main" style={{ backgroundImage: `url(/backgrounds/${background})` }}>
+      {/* TODO: come back to background after shrinking components */}
       <Controls
         head={head}
         setHead={setHead}

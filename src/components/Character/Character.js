@@ -1,3 +1,5 @@
+import '../Character/Character.css';
+
 export default function Character({ head, body, bottoms }) {
   return (
     <div className="character">
