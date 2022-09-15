@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
 .main {
   display: grid;
   grid-template-columns: 1.1fr, 1.4fr;
@@ -8,5 +10,26 @@
     'Catchphrase Character'
     'Display Character';
   padding: 20px;
-  background-color: rgb(239, 212, 162);
+  background: no-repeat center center fixed;
+  --webkit-background-size: cover;
+  --moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* filter: blur(1px);
+  -webkit-filter: blur(1px); */
+}
+
+.tools {
+  border: 2px white solid;
+  background-color: #e8ded5c6;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1.1fr;
+  grid-template-rows: 1.1fr 0.7fr 1.2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    'Controls'
+    'Catchphrase'
+    'Display';
+  font-family: 'Comfortaa', cursive;
 }
