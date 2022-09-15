@@ -1,4 +1,4 @@
-export default function Controls({ head, setHead, body, setBody }) {
+export default function Controls({ head, setHead, body, setBody, bottoms, setBottoms }) {
   return (
     <div className="controls">
       <label>Head</label>
@@ -19,13 +19,15 @@ export default function Controls({ head, setHead, body, setBody }) {
         <option value="hoodie-body">Hoodie</option>
         <option value="kitty-body">Kitty</option>
       </select>
-      {/* <label>Bottoms</label>
-      <select>
-        <option>Sweatpants</option>
-        <option>Shorts</option>
-        <option>Comfy Jeans</option>
-        <option>Skirt</option>
-      </select> */}
+      <label>Bottoms</label>
+      <select value={bottoms} onChange={(e) => setBottoms(e.target.value)}>
+        <option default value="sweatpants-bottoms">
+          Softest Sweatpants
+        </option>
+        <option value="shorts-bottoms">Sleep Shorts</option>
+        <option value="jeans-bottoms">Comfy Jeans</option>
+        <option value="skirt-bottoms">Flowy Skirt</option>
+      </select>
     </div>
   );
 }
