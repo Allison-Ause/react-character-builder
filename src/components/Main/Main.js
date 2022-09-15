@@ -11,6 +11,7 @@ export default function Main() {
   const [body, setBody] = useState('dino-body');
   const [bodyCount, setBodyCount] = useState(0);
   const [bottoms, setBottoms] = useState('sweatpants-bottoms');
+  const [bottomsCount, setBottomsCount] = useState(0);
   return (
     <div>
       <Controls
@@ -22,9 +23,10 @@ export default function Main() {
         setBodyCount={setBodyCount}
         bottoms={bottoms}
         setBottoms={setBottoms}
+        setBottomsCount={setBottomsCount}
       />
       {/* <Catchphrase /> */}
-      <Display headCount={headCount} bodyCount={bodyCount} />
+      <Display headCount={headCount} bodyCount={bodyCount} bottomsCount={bottomsCount} />
       <Character head={head} body={body} bottoms={bottoms} />
     </div>
   );

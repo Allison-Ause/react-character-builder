@@ -7,6 +7,7 @@ export default function Controls({
   setBodyCount,
   bottoms,
   setBottoms,
+  setBottomsCount,
 }) {
   return (
     <div className="controls">
@@ -41,7 +42,13 @@ export default function Controls({
         <option value="kitty-body">Kitty</option>
       </select>
       <label>Bottoms</label>
-      <select value={bottoms} onChange={(e) => setBottoms(e.target.value)}>
+      <select
+        value={bottoms}
+        onChange={(e) => {
+          setBottoms(e.target.value);
+          setBottomsCount((prevState) => prevState + 1);
+        }}
+      >
         <option default value="sweatpants-bottoms">
           Softest Sweatpants
         </option>
