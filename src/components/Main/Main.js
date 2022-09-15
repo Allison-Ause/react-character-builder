@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import Controls from '../Controls/Controls';
-// import Catchphrase from '../Catchphrase/Catchphrase';
+import Catchphrase from '../Catchphrase/Catchphrase';
 import Display from '../Display/Display';
 import Character from '../Character/Character';
 
@@ -16,6 +16,7 @@ export default function Main() {
     'All I need is a good book!',
     'Hot tea and me.',
   ]);
+  const [currentCatchphrase, setCurrentCatchphrase] = useState('');
   return (
     <div>
       <Controls
@@ -29,7 +30,11 @@ export default function Main() {
         setBottoms={setBottoms}
         setBottomsCount={setBottomsCount}
       />
-      {/* <Catchphrase /> */}
+      <Catchphrase
+        setCatchphrases={setCatchphrases}
+        currentCatchphrase={currentCatchphrase}
+        setCurrentCatchphrase={setCurrentCatchphrase}
+      />
       <Display
         headCount={headCount}
         bodyCount={bodyCount}
