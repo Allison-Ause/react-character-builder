@@ -1,8 +1,22 @@
-export default function Controls({ head, setHead, body, setBody, bottoms, setBottoms }) {
+export default function Controls({
+  head,
+  setHead,
+  setHeadCount,
+  body,
+  setBody,
+  bottoms,
+  setBottoms,
+}) {
   return (
     <div className="controls">
       <label>Head</label>
-      <select value={head} onChange={(e) => setHead(e.target.value)}>
+      <select
+        value={head}
+        onChange={(e) => {
+          setHead(e.target.value);
+          setHeadCount((prevState) => prevState + 1);
+        }}
+      >
         <option default value="pompom-head">
           Pom Pom
         </option>
