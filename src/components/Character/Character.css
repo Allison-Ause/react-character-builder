@@ -21,18 +21,8 @@
   font-size: 50px;
   color: #5a3415;
   margin-bottom: -50px;
-  /* background-color: #e8ded5c6;
-  border: 2px rgba(255, 255, 255, 0.49) solid; */
-
-  /* text-align: center;
-  margin: auto; */
 }
-/* 
-.character img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-} */
+
 .head {
   grid-area: head;
   max-height: 225px;
