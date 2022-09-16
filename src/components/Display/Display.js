@@ -7,7 +7,7 @@ export default function Display({ headCount, bodyCount, bottomsCount, catchphras
       A comfy warm layer sometimes takes ${bodyCount} times before it feels just right. 
       And you nailed that choice of bottoms in only ${bottomsCount} tries. 
       Now to grab a cup of tea and repeat some of your favorite relaxation mantras.`}</p>
-      <h3>Cozy Mantras:</h3>
+      <h3>Repeat After Me:</h3>
       <ul>
         {catchphrases.map((catchphrase) => (
           <li key={catchphrase}>{catchphrase}</li>

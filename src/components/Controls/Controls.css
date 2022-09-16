@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
 .controls {
   grid-area: Controls;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.controls label {
+  margin-bottom: 5px;
+}
+.controls select {
+  margin-bottom: 10px;
+  padding: 5px;
+  font-family: 'Comfortaa', cursive;
 }

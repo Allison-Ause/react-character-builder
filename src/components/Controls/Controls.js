@@ -13,6 +13,7 @@ export default function Controls({
 }) {
   return (
     <div className="controls">
+      <h1>Gear Up to Wind Down</h1>
       <label>Head</label>
       <select
         value={head}
